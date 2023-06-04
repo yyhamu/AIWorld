@@ -136,6 +136,7 @@ export function SideBar(props: { className?: string }) {
           onClick={() => navigate(Path.NewChat, { state: { fromHome: true } })}
           shadow
         />
+        <!--
         <IconButton
           icon={<PluginIcon />}
           text={shouldNarrow ? undefined : Locale.Plugin.Name}
@@ -143,6 +144,7 @@ export function SideBar(props: { className?: string }) {
           onClick={() => showToast(Locale.WIP)}
           shadow
         />
+        -->
       </div>
 
       <div
