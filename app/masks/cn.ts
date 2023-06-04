@@ -25,6 +25,8 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     hideContext:true,
+    hideContext:true,
+    hideContext:true,
     modelConfig: {
       model: "gpt-3.5-turbo",
       temperature: 1,
