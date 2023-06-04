@@ -211,35 +211,7 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: true,
   },
-  {
-    avatar: "1f4b8",
-    name: "创业点子王",
-    context: [
-      {
-        role: "user",
-        content:
-          "在企业 B2B SaaS 领域中想 3 个创业点子。创业点子应该有一个强大而引人注目的使命，并以某种方式使用人工智能。避免使用加密货币或区块链。创业点子应该有一个很酷很有趣的名字。这些想法应该足够引人注目，这样投资者才会兴奋地投资数百万美元。",
-        date: "",
-      },
-      {
-        role: "assistant",
-        content:
-          "1. VantageAI - 一个基于人工智能的企业智能平台，帮助中小企业利用数据分析和机器学习来优化其业务流程，提高生产效率并实现可持续发展。\n\n2. HoloLogix - 一个全新的日志处理平台，使用人工智能技术来分析和识别分散的数据源。它可以精确地分析和解释您的日志，从而与整个组织共享并提高数据可视化和分析效率。\n\n3. SmartPath - 一种基于数据的销售和营销自动化平台，可以理解买家的购买行为并根据这些行为提供最佳的营销计划和过程。该平台可以与Salesforce等其他外部工具整合，以更好地掌握您的客户关系管理。",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "gpt-3.5-turbo",
-      temperature: 1,
-      max_tokens: 2000,
-      presence_penalty: 0,
-      sendMemory: false,
-      historyMessageCount: 4,
-      compressMessageLengthThreshold: 1000,
-    },
-    lang: "cn",
-    builtin: true,
-  },
+  
   {
     avatar: "270d-fe0f",
     name: "互联网写手",
