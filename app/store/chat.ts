@@ -105,7 +105,7 @@ function countMessages(msgs: ChatMessage[]) {
   return msgs.reduce((pre, cur) => pre + cur.content.length, 0);
 }
 
-export const useChatStore = create<ChatStore>()(
+export const  = create<ChatStore>()(
   persist(
     (set, get) => ({
       sessions: [createEmptySession()],
@@ -168,7 +168,7 @@ export const useChatStore = create<ChatStore>()(
         if(mask){
           if (mask.context.length>1){
             console.log(mask.context[1]);
-            useChatStore.onUserInput(mask.context[1]);
+            this.onUserInput(mask.context[1]);
           }
         }
         
