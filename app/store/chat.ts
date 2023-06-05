@@ -105,7 +105,7 @@ function countMessages(msgs: ChatMessage[]) {
   return msgs.reduce((pre, cur) => pre + cur.content.length, 0);
 }
 
-export const  = create<ChatStore>()(
+export const useChatStore = create<ChatStore>()(
   persist(
     (set, get) => ({
       sessions: [createEmptySession()],
@@ -165,9 +165,6 @@ export const  = create<ChatStore>()(
           currentSessionIndex: 0,
           sessions: [session].concat(state.sessions),
         }));
-        
-        
-        
       },
 
       deleteSession(index) {
