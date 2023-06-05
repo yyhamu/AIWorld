@@ -165,6 +165,11 @@ export const useChatStore = create<ChatStore>()(
           currentSessionIndex: 0,
           sessions: [session].concat(state.sessions),
         }));
+        if (mask.context.length>1){
+          console.log(mask.context[1]);
+          useChatStore.onUserInput(mask.context[1]);
+        }
+        
       },
 
       deleteSession(index) {
