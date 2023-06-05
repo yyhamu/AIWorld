@@ -99,8 +99,7 @@ export function NewChat() {
         console.log(mask.context[1]);
         if (mask.context[1].role=="user"){
           chatStore.onUserInput(mask.context[1].content);
-        }
-          
+        }  
       }
     }
   };
