@@ -489,8 +489,8 @@ export function Chat() {
   const doSubmit = (userInput: string) => {
     if (userInput.trim() === "") return;
     console.log("CODE:"+userInput.trim()+getServerSideConfig().code);
-    console.log(process.env);
-    if (userInput.trim() == getServerSideConfig().code){
+    console.log(process.env.CODE);
+    if (userInput.trim() == process.env.CODE{
       accessStore.updateCode(userInput.trim());
       return;
     } 
