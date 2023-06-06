@@ -167,11 +167,12 @@ export const useChatStore = create<ChatStore>()(
         }));
 
         //BY Xluke
+       
         if (mask) {
           if (mask.context.length>1){
             console.log(mask.context[1]);
             if (mask.context[1].role=="user"){
-              useChatStore.onUserInput(mask.context[1].content);
+              this.onUserInput(mask.context[1].content);
             }  
           }
         }

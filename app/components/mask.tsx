@@ -414,6 +414,7 @@ export function MaskPage() {
                     text={Locale.Mask.Item.Chat}
                     onClick={() => {
                       chatStore.newSession(m);
+                      //startChat(m);
                       navigate(Path.Chat);
                     }}
                   />

@@ -94,8 +94,9 @@ export function NewChat() {
   const startChat = (mask?: Mask) => {
     chatStore.newSession(mask);
     setTimeout(() => navigate(Path.Chat), 1);
-    console.log("sadsad");
+
     //BY Xluke
+    /*
     if (mask) {
       if (mask.context.length>1){
         console.log(mask.context[1]);
@@ -103,9 +104,10 @@ export function NewChat() {
           chatStore.onUserInput(mask.context[1].content);
         }  
       }
-    }
+    }*/
     //By Xluke
   };
+  
 
   useCommand({
     mask: (id) => {
