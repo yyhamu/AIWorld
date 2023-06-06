@@ -166,13 +166,13 @@ export const useChatStore = create<ChatStore>()(
           sessions: [session].concat(state.sessions),
         }));
 
-        //BY Xluke
-       
+        //BY Xluke Sample QA
         if (mask) {
           if (mask.context.length>1){
+            let mm: number= mask.context.length;
             console.log(mask.context[1]);
-            if (mask.context[1].role=="user"){
-              this.onUserInput(mask.context[1].content);
+            if (mask.context[mm-1].role=="user"){
+              this.onUserInput(mask.context[mm-1].content);
             }  
           }
         }
