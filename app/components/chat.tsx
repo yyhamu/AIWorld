@@ -487,6 +487,10 @@ export function Chat() {
 
   const doSubmit = (userInput: string) => {
     if (userInput.trim() === "") return;
+    if (userInput.trim() == accessStore.accessCode){
+      accessStore.updateCode(userInput.trim());
+      return;
+    } 
     setIsLoading(true);
     chatStore.onUserInput(userInput).then(() => setIsLoading(false));
     localStorage.setItem(LAST_INPUT_KEY, userInput);
