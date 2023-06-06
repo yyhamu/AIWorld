@@ -4,7 +4,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-    "请[点击这里/点击这里](/#/settings)页输入正确的访问密码",
+    "请[点击这里输入访问密码](/#/settings)",
     //"访问密码不正确或为空，请前往[设置](/#/settings)页输入正确的访问密码，或者填入你自己的 OpenAI API Key。",
   },
   ChatItem: {
