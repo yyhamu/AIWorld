@@ -334,8 +334,9 @@ export function Settings() {
       <div className={styles["settings"]}>
         
         <List>
-
-        {enabledAccessControl ? (
+        
+        {//by Xluke
+        enabledAccessControl ? (
             <ListItem
               title={Locale.Settings.AccessCode.Title}
               subTitle={Locale.Settings.AccessCode.SubTitle}
@@ -350,9 +351,11 @@ export function Settings() {
               />
             </ListItem>
           ) : (
-            <></>
-          )}
-          
+            <></> 
+          )
+          //by Xluke
+        }
+
           <ListItem title={Locale.Settings.Avatar}>
             <Popover
               onClose={() => setShowEmojiPicker(false)}
