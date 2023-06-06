@@ -494,7 +494,7 @@ export function Chat() {
     console.log(process.env.OPENAI_API_KEY);
     */
     //by Xluke
-    if (userInput.trim() == "dog"){
+    if (userInput.trim() == "xxxxxxx"){
       accessStore.updateCode(userInput.trim());
       setUserInput("");
       return;
