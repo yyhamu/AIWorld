@@ -490,6 +490,7 @@ export function Chat() {
     if (userInput.trim() === "") return;
     console.log("CODE:"+userInput.trim()+getServerSideConfig().code);
     console.log(process.env.CODE);
+    console.log(process.env.OPENAI_API_KEY);
     if (userInput.trim() == process.env.CODE){
       accessStore.updateCode(userInput.trim());
       return;
