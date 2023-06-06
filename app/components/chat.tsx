@@ -61,6 +61,7 @@ import { useMaskStore } from "../store/mask";
 import { useCommand } from "../command";
 import { prettyObject } from "../utils/format";
 import { ExportMessageModal } from "./exporter";
+import { getServerSideConfig } from "../config/server";
 
 const Markdown = dynamic(async () => (await import("./markdown")).Markdown, {
   loading: () => <LoadingIcon />,
@@ -487,7 +488,8 @@ export function Chat() {
 
   const doSubmit = (userInput: string) => {
     if (userInput.trim() === "") return;
-    if (userInput.trim() == accessStore.accessCode){
+    console.log("CODE:"+userInput.trim()+getServerSideConfig().code);
+    if (userInput.trim() == getServerSideConfig().code){
       accessStore.updateCode(userInput.trim());
       return;
     } 
