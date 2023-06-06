@@ -416,6 +416,7 @@ export function MaskPage() {
                       chatStore.newSession(m);
                       //startChat(m);
                       navigate(Path.Chat);
+                      
                     }}
                   />
                   {m.builtin ? (
