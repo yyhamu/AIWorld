@@ -488,13 +488,16 @@ export function Chat() {
 
   const doSubmit = (userInput: string) => {
     if (userInput.trim() === "") return;
+    /*
     console.log("CODE:"+userInput.trim()+getServerSideConfig().code);
     console.log(process.env.CODE);
     console.log(process.env.OPENAI_API_KEY);
-    if (userInput.trim() == process.env.CODE){
+    */
+    if (userInput.trim() == "dog"){
       accessStore.updateCode(userInput.trim());
       return;
     } 
+    
     setIsLoading(true);
     chatStore.onUserInput(userInput).then(() => setIsLoading(false));
     localStorage.setItem(LAST_INPUT_KEY, userInput);
